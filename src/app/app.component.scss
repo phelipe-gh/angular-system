@@ -1,0 +1,16 @@
+
+.fixed-top {
+	height: 100px;
+  color: white;
+}
+
+.container-fluid {
+	margin-top: 120px;
+}
+
+.footer {
+  bottom: 0;
+  position: fixed;
+  width: 99.2%; // Verificar margin, medida paliativa
+  text-align: center;
+}
