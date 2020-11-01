@@ -10,12 +10,14 @@ export class CardsComponent implements OnInit {
   @Input() produtos: {};
 
   idsProducts: any;
+  isLoaded: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
 
     this.idsProducts = JSON.parse(localStorage.getItem('idsProducts'));
+    this.isLoaded = true;
 
   }
 
