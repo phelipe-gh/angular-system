@@ -1,6 +1,15 @@
-.logo {
-  width: 55%;
-  height: 600px;
-  display: inline-block;
-  background: url("../../app/content/inicial-page.png");
+.container img {
+  max-width:40%;
+  max-height:40%;
+  width: auto;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  width: 85%;
 }

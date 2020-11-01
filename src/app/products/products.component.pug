@@ -1,0 +1,11 @@
+.center
+    .divider
+        .divider-left.subtitle
+            | Products
+        .divider-right
+            span
+                i.fa.fa-cart-arrow-down.size
+            span.count {{ countProducts }}
+.center
+    div.products
+        app-cards([produtos]='products')
