@@ -4,7 +4,7 @@
             | Products
         .divider-right
             span
-                i.fa.fa-cart-arrow-down.size
+                i.fa.fa-cart-arrow-down.size((click)="goToPage('cart')")
             span.count {{ countProducts }}
 .center
     div.products

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { PRODUCTS } from '../../seeds/produtos'
 
 @Component({
@@ -12,7 +13,7 @@ export class ProductsComponent implements OnInit {
   canLoad: boolean = false;
   products: {};
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
 
@@ -22,6 +23,10 @@ export class ProductsComponent implements OnInit {
 
     this.products = PRODUCTS;
 
+  }
+
+  goToPage(pageName:string){
+    this.router.navigate([`${pageName}`]);
   }
 
 }

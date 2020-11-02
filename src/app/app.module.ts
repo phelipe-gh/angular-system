@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PageInitialComponent } from './page-initial/page-initial.component';
 import { ProductsComponent } from './products/products.component';
 import { CardsComponent } from './cards/cards.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CardsComponent } from './cards/cards.component';
       FooterComponent,
       PageInitialComponent,
       ProductsComponent,
-      CardsComponent
+      CardsComponent,
+      CartComponent
    ],
   imports: [
     BrowserModule,

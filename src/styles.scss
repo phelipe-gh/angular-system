@@ -1,4 +1,21 @@
 .size {
     font-size: 35px !important;
   }
-  
+
+.subtitle {
+  font-size: 32px;
+  margin-left: 6.5%;
+}
+
+.divider-left {
+  float: left;
+}
+
+.divider {
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  padding: 10px;
+  align-items: center;
+  width: 85%;
+}

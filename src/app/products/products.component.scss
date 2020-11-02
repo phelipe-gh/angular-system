@@ -1,20 +1,7 @@
-.divider {
-    justify-content: space-between;
-    overflow: hidden;
-    background-color: #f5f5f5;
-    padding: 10px;
-    align-items: center;
-    width: 85%;
-}
-
 .divider-right {
     float: right;
     cursor: pointer;
     margin-right: 6.5%;
-}
-
-.divider-left {
-    float: left;
 }
 
 span {
@@ -41,9 +28,4 @@ span {
     background-color: #f5f5f5;
     width: 85%;
     padding: 10px;
-}
-
-.subtitle {
-    font-size: 32px;
-    margin-left: 6.5%;
 }
