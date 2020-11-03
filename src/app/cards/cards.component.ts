@@ -30,7 +30,7 @@ export class CardsComponent implements OnInit {
     }
 
     localStorage.setItem('idsProducts', JSON.stringify(this.idsProducts));
-    
+
   }
 
   removeProduct(id: Number) {
@@ -45,6 +45,12 @@ export class CardsComponent implements OnInit {
     if (!this.idsProducts) return false;
 
     return this.idsProducts.includes(id);
+
+  }
+
+  setCardSelected(id) {
+
+    return this.wasAddedListSopping(id) ? { border: 'solid #477493' } : {};
 
   }
 
