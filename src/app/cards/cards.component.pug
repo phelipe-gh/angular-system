@@ -5,9 +5,10 @@
       div.price
         | $ {{ produto.preco }}
     p.description {{ produto.compatibilidade }}
-    div(style='min-width: 100%; max-width: 100%')
-      img([src]='produto.url' alt='Game' style='width:100%; height: 345px')
-    p(*ngIf='!wasAddedListSopping(produto.id)')
-      button((click)='addProduct(produto.id)') Add to Cart
-    p(*ngIf='wasAddedListSopping(produto.id)')
-      button.warning(type='button', (click)='removeProduct(produto.id)') Remove to cart
+    .padding
+      div(style='min-width: 100%; max-width: 100%')
+        img([src]='produto.url' alt='Game' style='width:100%; height: 345px')
+      p(*ngIf='!wasAddedListSopping(produto.id)')
+        button((click)='addProduct(produto.id)') Add to Cart
+      p(*ngIf='wasAddedListSopping(produto.id)')
+        button.warning(type='button', (click)='removeProduct(produto.id)') Remove to cart
